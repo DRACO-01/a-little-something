@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e8eef0">
+  <meta name="description" content="A little corner of the internet made to make you smile.">
+  <title>A little something for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-glow glow-one"></div>
+  <div class="sky-glow glow-two"></div>
+  <div class="cloud cloud-one" aria-hidden="true"></div>
+  <div class="cloud cloud-two" aria-hidden="true"></div>
+  <div class="sparkles" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>✧</span><span>·</span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to top"><span class="brand-mark">☁</span> a little something</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#mischief">Mischief bot</a>
+      <a href="#little-things">Little things</a>
+      <a href="#envelope">A note</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE CORNER OF THE INTERNET</p>
+        <h1>A little something<br><em>for you.</em></h1>
+        <p class="hero-text">A tiny corner for sharp roasts, unexpectedly decent lines, and a little appreciation.</p>
+        <a class="primary-button" href="#mischief">Come on in <span>↗</span></a>
+        <p class="tiny-note">Made with a little thought and a lot of curiosity.</p>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a cloudy sky">
+        <div class="sun-halo"></div>
+        <div class="moon">☾</div>
+        <div class="hero-star star-a">✦</div><div class="hero-star star-b">✧</div><div class="hero-star star-c">✦</div>
+        <div class="hero-cloud cloud-back"></div>
+        <div class="hero-cloud cloud-front"></div>
+        <div class="art-caption">somewhere between<br>cloud nine & chaos</div>
+      </div>
+    </section>
+
+    <section class="section-wrap bot-section" id="mischief">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE ENTERTAINMENT DEPARTMENT</p>
+        <h2>Meet the <em>mischief bot.</em></h2>
+        <p>Pick your mood. The bot has absolutely no professional qualifications.</p>
+      </div>
+
+      <div class="bot-card">
+        <div class="bot-top">
+          <div class="bot-avatar">☁</div>
+          <div><h3>Cloud Nine</h3><p><span class="online-dot"></span> Online-ish · Powered by questionable humour</p></div>
+          <span class="bot-label">YOUR TINY BOT</span>
+        </div>
+        <div class="chat-window" id="chatWindow" aria-live="polite">
+          <div class="chat-message bot-message">
+            <span class="message-avatar">☁</span>
+            <div class="bubble"><p>Oh, you're here. Pick your poison: low-key poetry, no-mercy-ish roasts, a genuine compliment, or chaos. 😌</p></div>
+          </div>
+        </div>
+        <div class="bot-controls">
+          <p class="control-label">WHAT'S THE VIBE?</p>
+          <div class="mode-buttons">
+            <button class="mode-button active" data-mode="shayari">🌷 Shayari</button>
+            <button class="mode-button" data-mode="roast">🔥 Roast me</button>
+            <button class="mode-button" data-mode="compliment">✨ Compliment me</button>
+            <button class="mode-button" data-mode="surprise">🎲 Surprise me</button>
+          </div>
+          <button class="generate-button" id="generateButton">Surprise me <span>✦</span></button>
+          <p class="bot-footnote">Roasts are personal-ish, not actually personal. If you laugh, I win. If you don't, it's a software issue.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap little-section" id="little-things">
+      <div class="section-heading">
+        <p class="eyebrow">02 / A FEW LITTLE THINGS</p>
+        <h2>Small things, <em>good vibes.</em></h2>
+        <p>Nothing dramatic. Just a few tiny reminders to smile.</p>
+      </div>
+      <div class="little-grid">
+        <article class="little-card card-cloud">
+          <span class="card-icon">☁</span><p class="card-kicker">A GENTLE REMINDER</p>
+          <h3>Take a breath.</h3><p>You don't have to figure everything out today. One thing at a time.</p>
+        </article>
+        <article class="little-card card-star">
+          <span class="card-icon">✦</span><p class="card-kicker">IMPORTANT SCIENCE</p>
+          <h3>You're pretty cool.</h3><p>Peer-reviewed by absolutely nobody. Still, the verdict stands.</p>
+        </article>
+        <article class="little-card card-moon">
+          <span class="card-icon">☾</span><p class="card-kicker">A VERY SERIOUS FACT</p>
+          <h3>Hydrate, please.</h3><p>This website cannot remind you in person. So consider this your reminder.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap envelope-section" id="envelope">
+      <div class="envelope-panel">
+        <div class="envelope-decoration">✧　☁　✧</div>
+        <p class="eyebrow">03 / A LITTLE NOTE</p>
+        <h2>Something small,<br><em>just for you.</em></h2>
+        <p class="envelope-intro">There's a tiny note waiting. No pressure, no grand declarations. Just open it.</p>
+        <button class="primary-button" id="openLetter">Open the note <span>♡</span></button>
+        <div class="letter" id="letter" hidden>
+          <div class="letter-top">A NOTE FOR YOU <span>✦</span></div>
+          <p>Hey you,</p>
+          <p>I made this little corner of the internet hoping it would make you smile. That's pretty much the whole plan. I hope it did. :)</p>
+          <p class="letter-signoff">— someone who thought you deserved a tiny surprise</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>☁</span> Made with curiosity, a little code, and good intentions.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
